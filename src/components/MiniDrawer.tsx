@@ -124,7 +124,7 @@ export default function MiniDrawer({ children }) {
                 <Divider />
                 <List>
                     {["Проекты", "Проекты", "Проекты", "Проекты"].map((text, index) => (
-                        <CustomListItem text={text} open={open} index={index} />
+                        <CustomListItem key={index} text={text} open={open} index={index} />
                     ))}
                 </List>
             </Drawer>
